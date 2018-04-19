@@ -28,39 +28,92 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Ebler</a>
+      <a class="navbar-brand" href="#">Home</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">TEST <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-       
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-         
-         
-        </div>
-       
-       
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li class="active"><a href="#">Über mich<span class="sr-only">(current)</span></a></li>
         
-      </ul>
+	
+       
+      
+	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekte<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">xxx</a></li>
+            <li><a href="#">Brausteuerung</a></li>
+            <li><a href="#">Polar M400 to CSV</a></li>
+	    <li><a href="#">Feuertonne</a></li>
+            
+          </ul>
+        </li>
+       </ul>
+      </form>
+      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 
-
-
-
     </header>
     <div class="content">
       
+
+</script>
+<style>
+/* The side navigation menu */
+/* The sidenav */
+.sidenav {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: auto ;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+   padding: 8px 8px 8px 10px;
+   text-decoration: none;
+   font-size: 20px;
+   color: #818181;
+   display: block;
+
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+}
+
+</style>
+<div id="mySidenav" class="sidenav">
+ <a href="#">About</a>
+ <a href="#">Services</a>
+ <a href="#">Clients</a>
+ <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+ ...
+</div>
+
+
+Hallo Welt 
+
     </div>
     <footer>
       <div class="container">
